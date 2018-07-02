@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>springboot-restful-demo</artifactId>
+  <packaging>jar</packaging>
+  <name>restful脚手架</name>
+  <parent>
+  	<groupId>cn.bimart</groupId>
+  	<artifactId>bimart-starter-parent</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </parent> 
+  <dependencies>
+  	<dependency> 
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+		</dependency>
+  </dependencies>  
+  <distributionManagement>
+		<repository>
+			<id>aliyun-releases</id>
+			<name>test-releases</name>
+			<url>http://60.205.184.87:8081/nexus/content/repositories/test-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>aliyun-snapshots</id>
+			<name>test-snapshots</name>
+			<url>http://60.205.184.87:8081/nexus/content/repositories/test-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
