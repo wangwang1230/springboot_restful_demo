@@ -1,0 +1,22 @@
+#配置端口
+server: 
+  port: 8085
+  
+#Druid Spring Boot Starter 配置属性的名称完全遵照 Druid，你可以通过 Spring Boot 配置文件来配置Druid数据库连接池和监控，如果没有配置则使用默认值。
+spring:
+  datasource: 
+    druid: 
+      #JDBC 配置
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      url: jdbc\:oracle\:thin\:@10.1.1.181\:1521\:ora11
+      username: hstd
+      password: hstd
+      #连接池配置
+      initial-size: 
+      max-active: 
+      min-idle: 
+      max-wait: 
+      pool-prepared-statements: 
+      max-pool-prepared-statement-per-connection-size: 
+      validation-query: 
+      validation-query-timeout: 
